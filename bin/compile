@@ -13,7 +13,7 @@ export_env_dir() {
   fi
 }
 
-export_env_dir()
+export_env_dir $3
 
 bp_dir=$(cd $(dirname $0); cd ..; pwd)
 awk -v root=$1 -f $bp_dir/bin/awkish.awk $1/$CONFIGURATOR
