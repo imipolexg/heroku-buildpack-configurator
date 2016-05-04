@@ -4,6 +4,9 @@ CONFCONF=$1
 CONFCONF+="/"
 CONFCONF+=$CONFIGURATOR
 
+echo $CONFIGURATOR
+echo $CONFCONF
+
 if [ -f $CONFCONF ]; then
     echo "Running buildpack-configurator" && exit 0
 else 
