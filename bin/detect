@@ -2,7 +2,7 @@
 
 CONFCONF=$1/conf.conf
 if [ -f $CONFCONF ]; then
-    exit 0
+    echo "Got $CONFCONF" && exit 0
 else 
     printenv && exit 1
 fi
