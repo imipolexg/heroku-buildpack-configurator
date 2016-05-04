@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
 
-echo $CONFIGURATOR
 CONFCONF=$1/$CONFIGURATOR
-echo $CONFCONF && exit 0
+echo $CONFIGURATOR && exit 0
