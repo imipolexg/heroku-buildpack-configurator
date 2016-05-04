@@ -24,9 +24,11 @@ This configuration file will edit the file `file_name` and replace all
 occurences of `replace-this-string` with `with-this-string`, and
 `replace-this-other-string` with `with-this-other-string` etc. The filename
 must be the first field, followed by a space, followed by a `KEY=VALUE` pair.
-There can be no spaces in the whole of the `KEY=VALUE` pair (I realize this
+
+*There can be no spaces* in the whole of each `KEY=VALUE` pair (I realize this
 reduces the usefulness of the script and plan to remove this restriction in a
-later version, for now this suffices for my own purposes).
+later version, for now this suffices for my own purposes). Remember: _there can
+be no spaces_ in the `KEY=VALUE` pairs.
 
 In order to find the configuration file, the buildpack expects the environment
 variable `CONFIGURATOR` to contain the (relative) path of the configuration
