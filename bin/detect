@@ -4,6 +4,8 @@ CONFCONF=$1
 CONFCONF+="/"
 CONFCONF+=$CONFIGURATOR
 
+echo "Detect!"
+
 echo $CONFIGURATOR
 echo $CONFCONF
 
