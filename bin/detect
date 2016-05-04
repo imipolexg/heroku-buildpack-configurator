@@ -1,4 +1,8 @@
 #!/usr/bin/env bash
 
-CONFCONF=$1/$CONFIGURATOR
-echo $CONFIGURATOR && exit 0
+CONFCONF=$1/conf.conf
+if [ -f $CONFCONF ]; then
+    printenv && exit 0
+else 
+    printenv && exit 1
+fi
