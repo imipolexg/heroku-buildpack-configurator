@@ -1,15 +1,8 @@
 #!/usr/bin/env bash
 
-CONFCONF=$1
-CONFCONF+="/"
-CONFCONF+=$CONFIGURATOR
-
-echo "Detect!"
-
 echo $CONFIGURATOR
-echo $CONFCONF
 
-if [ -f $CONFCONF ]; then
+if [ -f $1/$CONFIGURATOR ]; then
     echo "Running buildpack-configurator" && exit 0
 else 
     echo "no" && exit 1
