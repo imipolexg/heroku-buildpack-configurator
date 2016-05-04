@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
 
-CONFCONF=$1/$CONFIGURATOR
+CONFCONF=$1
+CONFCONF+="/"
+CONFCONF+=$CONFIGURATOR
+
 if [ -f $CONFCONF ]; then
     echo "Running buildpack-configurator" && exit 0
 else 
