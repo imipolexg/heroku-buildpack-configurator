@@ -18,8 +18,7 @@ export_env_dir() {
 
 export_env_dir $env_dir
 
-echo "CONFIGURATOR=$CONFIGURATOR"
-echo "FOOBAR=$FOOBAR"
+echo "Using CONFIGURATOR file $CONFIGURATOR"
 
 bp_dir=$(cd $(dirname $0); cd ..; pwd)
 awk -v root=$1 -f $bp_dir/bin/awkish.awk $build_dir/$CONFIGURATOR
