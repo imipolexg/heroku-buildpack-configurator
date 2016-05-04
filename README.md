@@ -22,11 +22,11 @@ made of up lines like this:
 
 This configuration file will edit the file `file_name` and replace all
 occurences of `replace-this-string` with `with-this-string`, and
-`replace-this-other-string=with-this-other-string` etc. The filename must be
-the first field, followed by a space, followed by a `KEY=VALUE` pair. There can
-be no spaces in the whole of the `KEY=VALUE` pair (I realize this reduces the
-usefulness of the script and plan to remove this restriction in a later
-version, for now this suffices for my own purposes).
+`replace-this-other-string` with `with-this-other-string` etc. The filename
+must be the first field, followed by a space, followed by a `KEY=VALUE` pair.
+There can be no spaces in the whole of the `KEY=VALUE` pair (I realize this
+reduces the usefulness of the script and plan to remove this restriction in a
+later version, for now this suffices for my own purposes).
 
 In order to find the configuration file, the buildpack expects the environment
 variable `CONFIGURATOR` to contain the (relative) path of the configuration
