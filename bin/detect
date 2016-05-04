@@ -1,9 +1,5 @@
 #!/usr/bin/env bash
 
 echo $CONFIGURATOR
-
-if [ -f $1/$CONFIGURATOR ]; then
-    echo "Running buildpack-configurator" && exit 0
-else 
-    echo "no" && exit 1
-fi
+CONFCONF=$1/$CONFIGURATOR
+echo $CONFCONF && exit 0
